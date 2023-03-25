@@ -21,5 +21,31 @@
       "scopeName": "source.circom",
       "path": "./syntaxes/circom.tmLanguage.json"
     }]
+  },
+  "capabilities": {
+    "completionProvider" : {
+      "resolveProvider": "true",
+      "triggerCharacters": [ "." ]
+    },
+    "hoverProvider": "true",
+    "signatureHelpProvider" : {
+      "triggerCharacters": [ "(" ]
+    },
+    "definitionProvider" : "true",
+    "referencesProvider" : "true",
+    "documentHighlightProvider" : "true",
+    "documentSymbolProvider" : "true",
+    "workspaceSymbolProvider" : "true",
+    "codeActionProvider" : "true",
+    "codeLensProvider" : {
+      "resolveProvider": "true"
+    },
+    "documentFormattingProvider" : "true",
+    "documentRangeFormattingProvider" : "true",
+    "documentOnTypeFormattingProvider" : {
+      "firstTriggerCharacter": "}",
+      "moreTriggerCharacter": [";", ","]
+    },
+    "renameProvider" : "true"
   }
 }
